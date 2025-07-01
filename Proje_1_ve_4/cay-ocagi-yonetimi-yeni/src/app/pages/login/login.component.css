@@ -1,0 +1,150 @@
+/* Devlet kurumu giriş sayfası stilleri */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-card {
+  max-width: 450px;
+  width: 100%;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dee2e6;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logo-container {
+  margin-bottom: 15px;
+}
+
+.tc-logo {
+  width: 280px;
+  height: auto;
+}
+
+.login-card h2 {
+  color: #666;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #dee2e6;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  transition: border-color 0.15s ease-in-out;
+  font-size: 15px;
+  background-color: #e8f0fe; /* Açık mavi/gri arka plan */
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #bf0000;
+  box-shadow: 0 0 0 2px rgba(191, 0, 0, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #bf0000; /* Türk kırmızısı */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #990000;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 25px;
+    margin: 20px;
+  }
+  
+  .login-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .tc-logo {
+    width: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 20px;
+  }
+  
+  input, button {
+    padding: 12px;
+  }
+
+  .tc-logo {
+    width: 200px;
+  }
+} 

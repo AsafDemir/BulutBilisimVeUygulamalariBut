@@ -1,0 +1,138 @@
+/* Ana uygulama konteyneri stil tanımlamaları */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Ana navigasyon menüsü stil tanımlamaları */
+.main-nav {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #edf2f7;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 40px; /* Yüksekliği azalttım */
+}
+
+/* Navigasyon linkleri konteyneri */
+.nav-links {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+/* Navigasyon menüsü link stilleri */
+.main-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 6px 22px; /* Yatay padding'i daha da artırdım */
+  font-weight: 600;
+  font-size: 0.95rem; /* Font boyutunu büyüttüm */
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 110px; /* Genişliği artırdım */
+  box-sizing: border-box;
+  transition: color 0.2s ease;
+  margin: 0 4px; /* Menü öğeleri arasına daha fazla marjin ekledim */
+  border-right: none;
+}
+
+/* Orta çizgi eklemek için */
+.main-nav a:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 16px; /* Çizginin yüksekliğini belirledim - yarısı kadar */
+  width: 1px;
+  background-color: #edf2f7;
+}
+
+/* Son menü öğesinde sağ kenar çizgisi olmasın */
+.main-nav a:last-child::after {
+  display: none;
+}
+
+/* Navigasyon menüsü hover efekti */
+.main-nav a:hover {
+  color: #e30a17;
+}
+
+/* Aktif menü öğesi stilleri */
+.main-nav a.active {
+  color: #2c3e50; /* Aktif menü rengi artık normal renkte */
+}
+
+/* Aktif menü öğesi alt çizgi efekti - animasyonlu */
+.main-nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #e30a17;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* Aktif menü için alt çizgi animasyonu */
+.main-nav a.active::before {
+  width: 100%;
+}
+
+/* Çıkış butonu stilleri */
+.logout-button {
+  background-color: #e30a17;
+  color: white;
+  border: none;
+  padding: 6px 14px; /* Padding'i biraz artırdım */
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Gap'i artırdım */
+  transition: background-color 0.2s ease;
+  margin-left: auto;
+  height: 32px;
+  font-size: 0.9rem; /* Font boyutunu büyüttüm */
+}
+
+.logout-button:hover {
+  background-color: #c00a15;
+}
+
+.logout-button i {
+  font-size: 0.95rem; /* İkon boyutunu büyüttüm */
+}
+
+/* Ana içerik alanı stil tanımlamaları */
+.content {
+  flex: 1;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}

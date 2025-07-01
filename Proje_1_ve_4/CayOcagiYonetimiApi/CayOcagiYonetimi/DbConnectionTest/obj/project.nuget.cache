@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "s7YHus8mBNE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\DbConnectionTest\\DbConnectionTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

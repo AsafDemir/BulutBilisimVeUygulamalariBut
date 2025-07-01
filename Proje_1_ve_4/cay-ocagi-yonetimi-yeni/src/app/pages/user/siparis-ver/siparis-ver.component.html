@@ -1,0 +1,133 @@
+<!-- Mesaj konteyneri -->
+<div class="messages-container">
+  <div *ngIf="hataMesaji" class="error-message">
+    {{ hataMesaji }}
+  </div>
+
+  <div *ngIf="basariMesaji" class="success-message">
+    {{ basariMesaji }}
+  </div>
+</div>
+
+<!-- Yükleme durumu -->
+<div *ngIf="yukleniyor" class="loading">
+  <div class="spinner"></div>
+  <p>Yükleniyor...</p>
+</div>
+
+<!-- Ana sipariş sayfası konteyneri -->
+<div class="order-page" *ngIf="!yukleniyor">
+    <!-- Sol Taraf: İçecek Kartları -->
+    <div class="drinks-section">
+        <!-- İçecek kartları grid yapısı -->
+        <div class="drinks-grid">
+            <!-- Her içecek için kart oluşturma -->
+            <div class="drink-card" *ngFor="let drink of drinks" [class.inactive-drink]="!drink.active">
+                <!-- İçecek resmi -->
+                <img *ngIf="drink.pics" [src]="drink.pics" [alt]="drink.name">
+                <!-- İçecek bilgileri -->
+                <div class="drink-info">
+                    <h3>{{ drink.name }}</h3>
+                    <div class="price-box">{{ drink.price || 0 }} Fiş</div>
+                    
+                    <!-- Miktar kontrol butonları (tüm içecekler için) -->
+                    <div class="quantity-control">
+                        <div class="quantity-label">ADET</div>
+                        
+                        <!-- Aktif içecekler için normal kontroller -->
+                        <div *ngIf="drink.active" class="quantity-buttons">
+                            <button (click)="decreaseQuantity(drink)">-</button>
+                            <span>{{ getQuantityInCart(drink) }}</span>
+                            <button (click)="addToCart(drink)">+</button>
+                        </div>
+                        
+                        <!-- Pasif içecekler için devre dışı kontroller -->
+                        <div *ngIf="!drink.active" class="quantity-buttons disabled">
+                            <button disabled>-</button>
+                            <span>0</span>
+                            <button disabled>+</button>
+                        </div>
+                        
+                        <!-- Aktif içecekler için EKLE butonu -->
+                        <button *ngIf="drink.active" class="add-btn" (click)="addToCart(drink)">EKLE</button>
+                        
+                        <!-- Pasif içecekler için MEVCUT DEĞİL yazısı -->
+                        <div *ngIf="!drink.active" class="inactive-warning">MEVCUT DEĞİL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sağ Taraf: Sipariş Özeti -->
+    <div class="order-summary">
+        <!-- Mavi Header Alanı -->
+        <div class="order-header">
+            <div class="header-left">
+                <span class="user-ticket-info" [ngClass]="{'low': kullaniciFisSayisi < 10}">Fişiniz: <b>{{ kullaniciFisSayisi }}</b></span>
+            </div>
+            <div class="header-right">
+                <button class="logout-btn" (click)="logout()">Çıkış Yap</button>
+            </div>
+        </div>
+        <h2 style="margin: 18px 0 0 0; font-size: 1.5rem; font-weight: 700; color: #222; letter-spacing: 1px;">Sepetim</h2>
+        <div class="order-header-underline"></div>
+        <!-- Kırmızı Sepet ve Sipariş Alanı -->
+        <div class="order-content">
+            <!-- Sipariş Tablosu -->
+            <div class="order-table">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ÜRÜN</th>
+                                <th>ADET</th>
+                                <th>ÜCRET</th>
+                                <th>TOPLAM</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of cart; let i = index">
+                                <td>{{ item.drink.name }}</td>
+                                <td>{{ item.quantity }}</td>
+                                <td>{{ item.drink.price || 0 }} Fiş</td>
+                                <td>{{ item.quantity * (item.drink.price || 0) }} Fiş</td>
+                                <td>
+                                    <button class="delete-btn" (click)="removeFromCart(i)">×</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Alt Kısım: Toplam ve Onaylama -->
+            <div class="order-footer">
+                <div class="total-section">
+                    <span>TOPLAM: {{ getCartTotal() }} Fiş</span>
+                </div>
+                <div *ngIf="!pricesLoaded && cart.length > 0" class="price-loading">
+                    Fiyatlar güncelleniyor, lütfen bekleyin...
+                </div>
+                <div class="room-selection">
+                    <label>ODA SEÇİMİ</label>
+                    <select [(ngModel)]="selectedRoom" required>
+                        <option [ngValue]="null">Oda Seçin</option>
+                        <option *ngFor="let room of rooms" [value]="room.id">
+                            {{ room.name }}
+                        </option>
+                    </select>
+                </div>
+                <div class="note-section">
+                    <label>SİPARİŞ NOTU</label>
+                    <textarea [(ngModel)]="orderNote"></textarea>
+                </div>
+                <button class="confirm-btn" 
+                        (click)="submitOrder()" 
+                        [disabled]="!selectedRoom || cart.length === 0 || !pricesLoaded">
+                    {{ pricesLoaded ? 'ONAYLA' : 'YÜKLENIYOR...' }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

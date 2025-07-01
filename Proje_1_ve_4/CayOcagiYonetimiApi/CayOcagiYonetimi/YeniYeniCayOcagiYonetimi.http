@@ -1,0 +1,22 @@
+@YeniYeniCayOcagiYonetimi_HostAddress = http://localhost:5000
+
+GET {{YeniYeniCayOcagiYonetimi_HostAddress}}/api/User
+Accept: application/json
+
+###
+
+POST {{YeniYeniCayOcagiYonetimi_HostAddress}}/api/Auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123456"
+}
+
+###
+
+GET {{YeniYeniCayOcagiYonetimi_HostAddress}}/api/Beverages
+Accept: application/json
+Authorization: Bearer [token]
+
+### 

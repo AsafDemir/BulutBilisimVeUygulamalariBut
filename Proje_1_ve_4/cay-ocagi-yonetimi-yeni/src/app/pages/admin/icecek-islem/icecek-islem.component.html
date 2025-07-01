@@ -1,0 +1,104 @@
+<!-- Mesaj konteyneri -->
+<div class="messages-container">
+  <div *ngIf="hataMesaji" class="error-message">
+    {{ hataMesaji }}
+  </div>
+
+  <div *ngIf="basariMesaji" class="success-message">
+    {{ basariMesaji }}
+  </div>
+</div>
+
+<!-- Yükleme durumu -->
+<div *ngIf="yukleniyor" class="loading">
+  <div class="spinner"></div>
+  <p>Yükleniyor...</p>
+</div>
+
+<!-- İçecek yönetimi ana konteyneri -->
+<div class="drink-management" *ngIf="!yukleniyor">
+    <!-- İçecek ekleme/düzenleme formu -->
+    <div class="form-section">
+        <h2>{{ isEditing ? 'İçecek Düzenle' : 'Yeni İçecek Ekle' }}</h2>
+        <form (ngSubmit)="onSubmit()">
+            <!-- İçecek adı giriş alanı -->
+            <div class="form-group">
+                <label for="name">İçecek Adı:</label>
+                <input type="text" id="name" name="name" [(ngModel)]="selectedDrink.name" required>
+            </div>
+
+            <!-- İçecek fiyatı giriş alanı -->
+            <div class="form-group">
+                <label for="price">Fiyat:</label>
+                <input type="number" id="price" name="price" [(ngModel)]="selectedDrink.price" required>
+            </div>
+
+            <!-- İçecek fotoğrafı yükleme alanı -->
+            <div class="form-group">
+                <label for="image">Fotoğraf:</label>
+                <input type="file" id="image" (change)="onFileSelected($event)" accept="image/*">
+                <!-- Fotoğraf önizleme alanı -->
+                <div class="image-preview-container" *ngIf="selectedDrink.pics">
+                    <div class="image-preview">
+                        <img [src]="selectedDrink.pics" alt="İçecek fotoğrafı">
+                    </div>
+                    <!-- Fotoğraf kaldırma butonu -->
+                    <button type="button" class="remove-image-btn" (click)="removeImage()">
+                        <i class="fas fa-times"></i> Fotoğrafı Kaldır
+                    </button>
+                </div>
+            </div>
+
+            <!-- Form aksiyon butonları -->
+            <div class="form-actions">
+                <button type="submit">{{ isEditing ? 'Güncelle' : 'Ekle' }}</button>
+                <button type="button" (click)="resetForm()" *ngIf="isEditing">İptal</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- İçecek listesi tablosu -->
+    <div class="list-section">
+        <h2>İçecek Listesi</h2>
+        <table>
+            <!-- Tablo başlıkları -->
+            <thead>
+                <tr>
+                    <th>Fotoğraf</th>
+                    <th>İçecek Adı</th>
+                    <th>Fiyat</th>
+                    <th>Durum</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <!-- Tablo içeriği -->
+            <tbody>
+                <!-- Her içecek için satır -->
+                <tr *ngFor="let drink of drinks">
+                    <!-- İçecek fotoğrafı -->
+                    <td>
+                        <img *ngIf="drink.pics" [src]="drink.pics" alt="İçecek fotoğrafı" class="drink-thumbnail">
+                        <span *ngIf="!drink.pics">Fotoğraf yok</span>
+                    </td>
+                    <td>{{ drink.name }}</td>
+                    <td>{{ drink.price }} Fiş</td>
+                    <!-- İçecek durum kontrolü -->
+                    <td>
+                        <button 
+                            [class]="drink.active ? 'btn-status-active' : 'btn-status-inactive'"
+                            (click)="toggleStatus(drink)">
+                            {{ drink.active ? 'Aktif' : 'Pasif' }}
+                        </button>
+                    </td>
+                    <!-- İçecek işlem butonları -->
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-edit" (click)="editDrink(drink)">Düzenle</button>
+                            <button class="btn-delete" (click)="deleteDrink(drink.id!)">Sil</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

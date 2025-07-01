@@ -1,0 +1,678 @@
+.order-page {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    min-height: 100vh;
+    position: relative;
+    background-color: #f8f9fa;
+    padding: 2px;
+}
+
+/* İçecek Kartları Bölümü */
+.drinks-section {
+    padding: 0;
+    height: auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    width: calc(100% - 0px);
+    margin: 0px;
+}
+
+.drinks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+/* Sipariş Özeti Bölümü - Sabit Pozisyon */
+.order-summary {
+    position: fixed;
+    right: 20px;
+    top: 28px;
+    width: 480px;
+    height: calc(100vh - 40px);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+/* Sepetim başlığı için üst boşluğu azalt */
+h2 {
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+}
+
+/* Order-header-underline için boşlukları azalt */
+.order-header-underline {
+    margin-bottom: 10px !important;
+    margin-top: 0 !important;
+}
+
+/* Sepet içeriği için düzenli bir alan */
+.order-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 80px); /* Üst kısımdaki başlıklar ve header için alan ayır */
+}
+
+/* Tablo container için scroll ve yükseklik ayarlaması */
+.table-container {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: auto;
+    max-height: calc(100vh - 350px); /* Ekran yüksekliğine göre uygun scroll alanı */
+    overflow-y: auto;
+}
+
+.order-table {
+    flex: 1;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    position: relative;
+    height: auto;
+}
+
+.order-table h2 {
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+
+/* Tablo başlıklarının üstündeki ve altındaki boşlukları minimuma indir */
+.order-header-underline {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+.table-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Tablo stilleri diğer sayfalara uygun olarak düzenleniyor */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    margin-top: -10px;
+    table-layout: fixed;
+}
+
+/* Satır stilini diğer sayfalara benzetiyorum */
+tr {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    border: 1px solid #e2e8f0;
+    height: 60px;
+}
+
+tr:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    border-color: #cbd5e1;
+}
+
+/* Tablo hücrelerinin stillerini diğer sayfalara uygun hale getiriyorum */
+td {
+    padding: 10px 16px;
+    border: none;
+    background: transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.925rem;
+    color: #1e293b;
+}
+
+/* Ürün hücresi */
+td:first-child {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-left: 24px;
+    font-weight: 500;
+}
+
+/* Silme butonu hücresi */
+td:last-child {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    text-align: center;
+    padding: 4px;
+    vertical-align: middle;
+}
+
+/* Tablo başlık satırı */
+thead tr {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    height: auto;
+}
+
+/* Tablo başlıkları */
+thead th {
+    color: #475569;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
+
+/* Ürün adını daha belirgin yapmak için */
+td:nth-child(1) {
+    color: #1e293b;
+    font-weight: 500;
+}
+
+/* Fiyat bilgilerini daha vurgulu göstermek için */
+td:nth-child(3),
+td:nth-child(4) {
+    color: #1e293b;
+    font-weight: 500;
+}
+
+/* Tablo genişliklerini düzenleme */
+th:nth-child(1), td:nth-child(1) { width: 40%; } /* ÜRÜN */
+th:nth-child(2), td:nth-child(2) { width: 15%; } /* ADET */
+th:nth-child(3), td:nth-child(3) { width: 20%; } /* ÜCRET */
+th:nth-child(4), td:nth-child(4) { width: 20%; } /* TOPLAM */
+th:nth-child(5), td:nth-child(5) { width: 40px; min-width: 40px; padding: 4px; } /* Silme butonu */
+
+/* Silme butonu stilini küçülterek düzenleme */
+.delete-btn {
+    width: 28px;
+    height: 28px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer alanını en alta sabitleyecek şekilde düzenle */
+.order-footer {
+    background: transparent;
+    padding: 10px 0;
+    border-top: 2px solid #e2e8f0;
+    margin-top: auto !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Onayla butonunu en alta hizala */
+.confirm-btn {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin-top: auto;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-btn:hover {
+    background-color: #218838;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.confirm-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Fiyat yükleniyor göstergesi */
+.price-loading {
+    color: #f39c12;
+    font-weight: bold;
+    font-size: 0.85em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive tasarım için scroll özelliği */
+@media (max-width: 1200px) {
+    .order-page {
+        padding: 2px;
+    }
+    
+    .drinks-section,
+    .order-summary {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .order-page {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .drinks-section {
+        height: auto;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .order-summary {
+        position: relative;
+        width: calc(100% - 20px);
+        height: auto;
+        margin: 10px;
+        right: 0;
+        top: 0;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .order-table {
+        overflow-x: hidden;
+        height: auto;
+    }
+    
+    table {
+        min-width: 600px;
+    }
+
+    .order-footer {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .table-container {
+        height: 300px;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* İçecek Kartları Stilleri */
+.drink-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.drink-card:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    border-color: #cbd5e1;
+}
+
+.drink-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.drink-info {
+    padding: 15px;
+}
+
+.drink-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.price-box {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #28a745;
+}
+
+.quantity-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quantity-label {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.95rem;
+}
+
+.quantity-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-buttons button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: #f8fafc;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-buttons button:hover {
+    background: #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.add-btn {
+    width: 100%;
+    padding: 8px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.add-btn:hover {
+    background: #218838;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Genel Stil */
+button {
+    transition: all 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+/* Oval ve gölgeli header tasarımı */
+.order-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 18px;
+    padding: 10px 24px;
+    min-height: 40px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: none !important;
+    margin-bottom: 18px;
+}
+
+.header-left .user-ticket-info {
+    background: #fffbe6;
+    color: #bfa100;
+    border: 1px solid #ffe066;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    padding: 6px 16px;
+    box-shadow: none;
+    margin: 0;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+/* Fiş sayısı 10'un altındaysa kırmızı kutu */
+.header-left .user-ticket-info.low {
+    background: #ffeaea;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+/* Çıkış Yap butonu, diğer butonlarla aynı stil ve sadece kırmızı */
+.logout-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn:hover {
+    background: #c82333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Pasif (stokta olmayan) içecekler için stil */
+.inactive-drink {
+    position: relative;
+    opacity: 0.7;
+    filter: grayscale(80%);
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    transform: none !important; /* Hover efektini devre dışı bırak */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important; /* Hover efektini devre dışı bırak */
+}
+
+.inactive-drink:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    transform: none !important;
+    cursor: not-allowed;
+}
+
+.inactive-warning {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Devre dışı bırakılmış miktar kontrolleri için stil */
+.quantity-buttons.disabled {
+    opacity: 0.6;
+}
+
+.quantity-buttons.disabled button {
+    background-color: #f8fafc;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.quantity-buttons.disabled span {
+    color: #888;
+}
+
+.total-section {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #28a745;
+    margin-bottom: 10px;
+    padding: 8px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.room-selection,
+.note-section {
+    margin-bottom: 15px;
+}
+
+.room-selection label,
+.note-section label {
+    display: block;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    background: #f8fafc;
+    transition: all 0.2s ease;
+}
+
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+textarea {
+    min-height: 60px;
+    max-height: 100px;
+    resize: vertical;
+}
+
+/* Mesaj konteyneri */
+.messages-container {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Hata ve başarı mesajları */
+.error-message {
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fcd34d;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slide-in 0.3s ease, slide-out 0.3s ease 4.7s forwards;
+}
+
+.success-message {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slide-in 0.3s ease, slide-out 0.3s ease 4.7s forwards;
+}
+
+@keyframes slide-in {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-out {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Yükleme animasyonu */
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 12px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

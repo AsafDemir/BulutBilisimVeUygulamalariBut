@@ -1,0 +1,17 @@
+<div class="app-container">
+  <nav class="main-nav" *ngIf="!isUserPage && !isLoginPage">
+    <div class="nav-links">
+      <a routerLink="/admin" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Aktif Siparişler</a>
+      <a routerLink="/tamamlanan-siparisler" routerLinkActive="active">Tamamlanan Siparişler</a>
+      <a routerLink="/icecek-islem" routerLinkActive="active">İçecek İşlemleri</a>
+      <a routerLink="/oda-islem" routerLinkActive="active">Oda İşlemleri</a>
+      <a routerLink="/kullanici-islem" routerLinkActive="active">Kullanıcı İşlemleri</a>
+    </div>
+    <button class="logout-button" (click)="logout()">
+      <i class="fas fa-sign-out-alt"></i> Çıkış
+    </button>
+  </nav>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

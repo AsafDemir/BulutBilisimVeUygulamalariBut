@@ -1,0 +1,63 @@
+<div class="completed-orders-management">
+  <!-- Hata mesajı gösterimi -->
+  <div *ngIf="loadingError" class="error-message">
+    {{ loadingError }}
+  </div>
+
+  <!-- Tamamlanan siparişler bölümü -->
+  <div class="list-section">
+    <h2>Tamamlanan Siparişler</h2>
+    
+    <!-- Sipariş tablosu (siparişler varsa gösterilir) -->
+    <div class="orders-table" *ngIf="orders.length > 0">
+      <table>
+        <!-- Tablo başlıkları -->
+        <thead>
+          <tr>
+            <th class="no-column">SİPARİŞ NO</th>
+            <th class="room-column">ODA</th>
+            <th class="content-column">SİPARİŞ İÇERİĞİ</th>
+            <th class="note-column">NOT</th>
+            <th class="total-column">TOPLAM</th>
+            <th class="status-column">DURUM</th>
+          </tr>
+        </thead>
+        <!-- Tablo içeriği -->
+        <tbody>
+          <!-- Her sipariş için satır oluşturma -->
+          <tr *ngFor="let order of orders">
+            <td class="no-column">#{{order.id}}</td>
+            <td class="room-column">{{getRoomName(order.roomid)}}</td>
+            <!-- Sipariş içeriği grid yapısı -->
+            <td class="content-column">
+              <div class="order-items-grid">
+                <!-- Her sipariş içeriği için grid öğesi -->
+                <ng-container *ngFor="let drink of order.orderDrinks; let i = index">
+                  <div class="order-item" [class.new-row]="i > 0 && i % 2 === 0">
+                    {{drink.piece}}x {{drink.BeverageNavigation?.name || 'Bilinmeyen İçecek'}}
+                  </div>
+                </ng-container>
+              </div>
+            </td>
+            <td class="note-column">{{order.notes || '-'}}</td>
+            <td class="total-column">{{calculateOrderTotal(order) | number:'1.0-0'}} Fiş</td>
+            <!-- Sipariş durumu gösterimi -->
+            <td class="status-column">
+              <span class="status" [ngClass]="{
+                'approved': order.status === OrderStatus.Approved,
+                'rejected': order.status === OrderStatus.Rejected
+              }">
+                {{getOrderStatusText(order.status)}}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sipariş yoksa gösterilecek mesaj -->
+    <div *ngIf="orders.length === 0" class="no-orders">
+      Tamamlanan sipariş bulunmamaktadır.
+    </div>
+  </div>
+</div>

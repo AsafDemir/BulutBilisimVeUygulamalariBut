@@ -1,0 +1,555 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\models\\orderdrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\models\\orderdrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Migrations\\20250511014524_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CayOcagiYonetimi\\Migrations\\20250511014524_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\controllers\\orderdrinkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\controllers\\orderdrinkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi_Cloud\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250219140011_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\Desktop\\angular\\cay-ocagi-yonetimi\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\Desktop\\angular\\cay-ocagi-yonetimi\\src\\app\\pages\\admin\\anasayfa\\anasayfa.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218202757_CreateNewDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\Desktop\\CayOcagiYonetimi\\CayOcagiYonetimi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218201730_UpdateOrderDrinkNavigationPropertiesWithRestrict.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218201503_UpdateOrderDrinkNavigationProperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218190229_AddUserAuthenticationWithNullableUserId.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218190038_AddUserAuthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\controllers\\beveragescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\controllers\\beveragescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\models\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\models\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\models\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\models\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\models\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\models\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\models\\beverage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\models\\beverage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|c:\\users\\pc\\source\\repos\\cayocagiyonetimiapi\\cayocagiyonetimi\\cayocagiyonetimi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{93F3C349-7ADB-43AE-815B-ADBF2C6B1B93}|CayOcagiYonetimi\\CayOcagiYonetimi.csproj|solutionrelative:cayocagiyonetimi\\cayocagiyonetimi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Migrations\\20250219140141_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CayOcagiYonetimi\\Migrations\\20250219140141_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\appsettings.json",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\appsettings.json",
+              "RelativeToolTip": "CayOcagiYonetimi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-06T01:43:28.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Program.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Program.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Program.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Program.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAkwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T07:45:17.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T19:08:08.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T14:36:05.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Services\\AuthService.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Services\\AuthService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAkwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T13:57:52.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Services\\IAuthService.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T02:19:29.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\appsettings.Development.json",
+              "RelativeToolTip": "CayOcagiYonetimi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-09T22:22:59.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderdrinksController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Controllers\\OrderdrinksController.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Controllers\\OrderdrinksController.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Controllers\\OrderdrinksController.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Controllers\\OrderdrinksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T21:03:38.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderDrink.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\OrderDrink.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Models\\OrderDrink.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\OrderDrink.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Models\\OrderDrink.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:03:11.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\User.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T02:58:29.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Services\\UserService.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Services\\UserService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAYwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T02:20:07.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Models\\Room.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\Room.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:03:12.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250511014524_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Migrations\\20250511014524_InitialCreate.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Migrations\\20250511014524_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Migrations\\20250511014524_InitialCreate.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Migrations\\20250511014524_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T01:45:24.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:22:52.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BeveragesController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Controllers\\BeveragesController.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Controllers\\BeveragesController.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Controllers\\BeveragesController.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Controllers\\BeveragesController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:22:31.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\Order.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:03:05.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi_Cloud\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\CayOcagiYonetimi\\CayOcagiYonetimi_Cloud\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi_Cloud\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\CayOcagiYonetimi\\CayOcagiYonetimi_Cloud\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T22:21:18.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Models\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\OrderStatus.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Models\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T00:05:48.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250219140011_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250219140011_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250219140011_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250219140011_InitialCreate.cs",
+              "RelativeToolTip": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250219140011_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T14:00:11.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20250219140141_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Migrations\\20250219140141_InitialCreate.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Migrations\\20250219140141_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Migrations\\20250219140141_InitialCreate.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Migrations\\20250219140141_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T14:01:42.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Models\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Models\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T14:36:10.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Models\\DTOs\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Models\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T01:13:32.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Beverage.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\Beverage.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Models\\Beverage.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Models\\Beverage.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Models\\Beverage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:03:08.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20250218190229_AddUserAuthenticationWithNullableUserId.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218190229_AddUserAuthenticationWithNullableUserId.cs",
+              "RelativeDocumentMoniker": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218190229_AddUserAuthenticationWithNullableUserId.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218190229_AddUserAuthenticationWithNullableUserId.cs",
+              "RelativeToolTip": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218190229_AddUserAuthenticationWithNullableUserId.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:02:29.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\angular\\cay-ocagi-yonetimi\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\angular\\cay-ocagi-yonetimi\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\angular\\cay-ocagi-yonetimi\\src\\app\\app.module.ts",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\angular\\cay-ocagi-yonetimi\\src\\app\\app.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-02-19T13:07:26.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20250218202757_CreateNewDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218202757_CreateNewDatabase.cs",
+              "RelativeDocumentMoniker": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218202757_CreateNewDatabase.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218202757_CreateNewDatabase.cs",
+              "RelativeToolTip": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218202757_CreateNewDatabase.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T20:27:57.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "anasayfa.component.ts",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\angular\\cay-ocagi-yonetimi\\src\\app\\pages\\admin\\anasayfa\\anasayfa.component.ts",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\angular\\cay-ocagi-yonetimi\\src\\app\\pages\\admin\\anasayfa\\anasayfa.component.ts",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\angular\\cay-ocagi-yonetimi\\src\\app\\pages\\admin\\anasayfa\\anasayfa.component.ts",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\angular\\cay-ocagi-yonetimi\\src\\app\\pages\\admin\\anasayfa\\anasayfa.component.ts",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAIwMkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-02-19T00:29:55.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250218201503_UpdateOrderDrinkNavigationProperties.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218201503_UpdateOrderDrinkNavigationProperties.cs",
+              "RelativeDocumentMoniker": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218201503_UpdateOrderDrinkNavigationProperties.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218201503_UpdateOrderDrinkNavigationProperties.cs",
+              "RelativeToolTip": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218201503_UpdateOrderDrinkNavigationProperties.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T20:15:03.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20250218201730_UpdateOrderDrinkNavigationPropertiesWithRestrict.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218201730_UpdateOrderDrinkNavigationPropertiesWithRestrict.cs",
+              "RelativeDocumentMoniker": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218201730_UpdateOrderDrinkNavigationPropertiesWithRestrict.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218201730_UpdateOrderDrinkNavigationPropertiesWithRestrict.cs",
+              "RelativeToolTip": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218201730_UpdateOrderDrinkNavigationPropertiesWithRestrict.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T20:17:30.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\CayOcagiYonetimi\\CayOcagiYonetimi\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\CayOcagiYonetimi\\CayOcagiYonetimi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\CayOcagiYonetimi\\CayOcagiYonetimi\\appsettings.json",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\CayOcagiYonetimi\\CayOcagiYonetimi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-18T20:19:52.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20250218190038_AddUserAuthentication.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218190038_AddUserAuthentication.cs",
+              "RelativeDocumentMoniker": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218190038_AddUserAuthentication.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218190038_AddUserAuthentication.cs",
+              "RelativeToolTip": "..\\CayOcagiYonetimi\\CayOcagiYonetimi\\Migrations\\20250218190038_AddUserAuthentication.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:00:38.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\Controllers\\RoomsController.cs",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "CayOcagiYonetimi\\Controllers\\RoomsController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAmwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:23:06.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CayOcagiYonetimi.csproj",
+              "DocumentMoniker": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\CayOcagiYonetimi.csproj",
+              "RelativeDocumentMoniker": "CayOcagiYonetimi\\CayOcagiYonetimi.csproj",
+              "ToolTip": "C:\\Users\\Pc\\source\\repos\\CayOcagiYonetimiApi\\CayOcagiYonetimi\\CayOcagiYonetimi.csproj",
+              "RelativeToolTip": "CayOcagiYonetimi\\CayOcagiYonetimi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-09T18:19:46.807Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<!-- Mesaj konteyneri -->
+<div class="messages-container">
+  <div *ngIf="hataMesaji" class="error-message">
+    {{ hataMesaji }}
+  </div>
+
+  <div *ngIf="basariMesaji" class="success-message">
+    {{ basariMesaji }}
+  </div>
+</div>
+
+<!-- Yükleme durumu -->
+<div *ngIf="yukleniyor" class="loading">
+  <div class="spinner"></div>
+  <p>Yükleniyor...</p>
+</div>
+
+<!-- Oda yönetimi ana konteyneri -->
+<div class="room-management" *ngIf="!yukleniyor">
+    <!-- Oda ekleme/düzenleme formu -->
+    <div class="form-section">
+        <h2>{{ isEditing ? 'Oda Düzenle' : 'Yeni Oda Ekle' }}</h2>
+        <form (ngSubmit)="onSubmit()">
+            <!-- Oda adı giriş alanı -->
+            <div class="form-group">
+                <label for="name">Oda Adı:</label>
+                <input type="text" id="name" name="name" [(ngModel)]="selectedRoom.name" required>
+            </div>
+
+            <!-- Form aksiyon butonları -->
+            <div class="form-actions">
+                <button type="submit">{{ isEditing ? 'Güncelle' : 'Ekle' }}</button>
+                <button type="button" (click)="resetForm()" *ngIf="isEditing">İptal</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Oda listesi tablosu -->
+    <div class="list-section">
+        <h2>Oda Listesi</h2>
+        <table>
+            <!-- Tablo başlıkları -->
+            <thead>
+                <tr>
+                    <th>Oda No</th>
+                    <th>Oda Adı</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <!-- Tablo içeriği -->
+            <tbody>
+                <!-- Her oda için satır -->
+                <tr *ngFor="let room of rooms">
+                    <td>{{ room.id }}</td>
+                    <td>{{ room.name }}</td>
+                    <!-- Oda işlem butonları -->
+                    <td>
+                        <div class="action-buttons">
+                            <button class="btn-edit" (click)="editRoom(room)">Düzenle</button>
+                            <button class="btn-delete" (click)="deleteRoom(room.id!)">Sil</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

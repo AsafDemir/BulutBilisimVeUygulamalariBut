@@ -1,0 +1,49 @@
+<!-- Giriş ekranı ana konteyner -->
+<div class="login-container">
+  <div class="login-card">
+    <div class="header-logo">
+      <div class="logo-container">
+      </div>
+      <h2>Çay Ocağı Yönetim Sistemi</h2>
+    </div>
+    
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">T.C. Kimlik No / Kullanıcı Adı:</label>
+        <input 
+          id="username"
+          type="text"
+          formControlName="username"
+          [class.is-invalid]="submitted && loginForm.get('username')?.errors"
+          autocomplete="off"
+        />
+        <div *ngIf="submitted && loginForm.get('username')?.errors" class="invalid-feedback">
+          <div *ngIf="loginForm.get('username')?.errors?.['required']">Kullanıcı adı alanı zorunludur</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Şifre:</label>
+        <input 
+          id="password"
+          type="password"
+          formControlName="password"
+          [class.is-invalid]="submitted && loginForm.get('password')?.errors"
+        />
+        <div *ngIf="submitted && loginForm.get('password')?.errors" class="invalid-feedback">
+          <div *ngIf="loginForm.get('password')?.errors?.['required']">Şifre alanı zorunludur</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" [disabled]="loading">
+          {{ loading ? 'GİRİŞ YAPILIYOR...' : 'GİRİŞ YAP' }}
+        </button>
+      </div>
+
+      <div *ngIf="error" class="alert-danger">
+        {{error}}
+      </div>
+    </form>
+  </div>
+</div> 
