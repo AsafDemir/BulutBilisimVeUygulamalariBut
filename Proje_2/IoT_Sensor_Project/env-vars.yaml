@@ -1,0 +1,42 @@
+# Cloud Run Environment Variables Configuration
+# Bu dosya Cloud Run deployment için kullanılır
+# Kullanım: gcloud run deploy --env-vars-file env-vars.yaml
+
+# ===== MQTT Broker Ayarları =====
+MQTT_BROKER_HOST: "34.78.81.214"
+MQTT_BROKER_PORT: "1883"
+MQTT_TOPIC: "sensors/temperature"
+MQTT_CLIENT_ID_SENSOR: "temperature_sensor"
+MQTT_CLIENT_ID_CONSUMER: "data_consumer"
+
+# ===== Local PostgreSQL Veritabanı Ayarları (Fallback) =====
+DB_HOST: "localhost"
+DB_PORT: "5432"
+DB_NAME: "iot_sensors"
+DB_USER: "postgres"
+DB_PASSWORD: "1234"
+
+# ===== Cloud Database Ayarları (Ana Veritabanı) =====
+CLOUD_DB_ENABLED: "false"
+CLOUD_DB_HOST: "34.97.8.55"
+CLOUD_DB_PORT: "5432"
+CLOUD_DB_NAME: "iot_sensors"
+CLOUD_DB_USER: "iot-sensor-db"
+CLOUD_DB_PASSWORD: "1234"
+
+# ===== Google Cloud Platform Ayarları =====
+GOOGLE_PROJECT_ID: "mqtt-veri-isleme"
+GOOGLE_PUBSUB_TOPIC: "sensor-data"
+GOOGLE_APPLICATION_CREDENTIALS: "mqtt-veri-isleme-d7424e378762.json"
+
+# ===== Sensör Simülasyon Ayarları =====
+SENSOR_INTERVAL: "5"
+MIN_TEMPERATURE: "15.0"
+MAX_TEMPERATURE: "35.0"
+MIN_HUMIDITY: "30.0"
+MAX_HUMIDITY: "80.0"
+
+# ===== Flask Uygulama Ayarları =====
+FLASK_HOST: "0.0.0.0"
+FLASK_PORT: "8080"
+FLASK_DEBUG: "false" 

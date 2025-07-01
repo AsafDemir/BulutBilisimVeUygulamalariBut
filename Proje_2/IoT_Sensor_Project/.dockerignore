@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Git
+.git/
+.gitignore
+
+# Project specific - Local files not needed in Cloud Run
+mosquitto.conf
+docker-compose.yml
+start_project.bat
+mqtt_consumer.log
+test_system.py
+check_data.py
+sensor_simulator.py
+enhanced_data_consumer.py
+data_consumer.py
+mqtt_setup.py
+database_setup.py
+test_pubsub.py
+cloud_env_example.txt
+
+# Credentials - NEVER include in container
+# mqtt-veri-isleme-d7424e378762.json  # Cloud Run için gerekli
+*.key
+*.pem
+
+# Documentation
+README.md
+
+# Database
+*.db
+*.sql 

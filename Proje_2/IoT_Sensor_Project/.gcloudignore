@@ -1,0 +1,38 @@
+﻿# .gcloudignore dosyası - binary ve gereksiz dosyaları dışlar
+
+# Gizli dosyalar
+.env
+*.json
+
+# Görseller
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# Belgeler
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+
+# Derlenmiş dosyalar / IDE artık dosyaları
+__pycache__/
+*.pyc
+*.pyo
+*.exe
+*.zip
+*.tar
+*.rar
+*.7z
+
+# Not defteri, taslak, yedek dosyaları
+*.bak
+*.tmp
+*.log
+*.ipynb
+
+# Diğer
+.DS_Store
+Thumbs.db

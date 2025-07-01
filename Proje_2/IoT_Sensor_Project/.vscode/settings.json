@@ -1,0 +1,11 @@
+{
+    "python.defaultInterpreter": "C:\\Users\\Pc\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "python.terminal.activateEnvironment": false,
+    "files.associations": {
+        "*.py": "python"
+    },
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": false,
+    "terminal.integrated.defaultProfile.windows": "PowerShell"
+} 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Sensör Dashboard - Basit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1><i class="fas fa-thermometer-half"></i> IoT Sensör Dashboard</h1>
+                <div class="header-info">
+                    <span class="status-indicator" id="statusIndicator">
+                        <i class="fas fa-circle"></i> Bağlı
+                    </span>
+                    <span class="last-update" id="lastUpdate">Son Güncelleme: --</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Time Range Selection -->
+            <section class="time-section">
+                <div class="time-card">
+                    <h3><i class="fas fa-clock"></i> Zaman Aralığı Seçin</h3>
+                    <div class="time-buttons">
+                        <button class="time-btn active" data-hours="1">Son 1 Saat</button>
+                        <button class="time-btn" data-hours="6">Son 6 Saat</button>
+                        <button class="time-btn" data-hours="24">Son 24 Saat</button>
+                        <button class="time-btn" data-hours="168">Son 7 Gün</button>
+                        <button class="time-btn" data-hours="0">Tümü</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Cards -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Toplam Kayıt</h3>
+                            <p class="stat-number" id="totalRecords">0</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-thermometer-half"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>Ortalama Sıcaklık</h3>
+                            <p class="stat-number" id="avgTemperature">0°C</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>En Yüksek</h3>
+                            <p class="stat-number" id="maxTemperature">0°C</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>En Düşük</h3>
+                            <p class="stat-number" id="minTemperature">0°C</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data List -->
+            <section class="data-section">
+                <div class="data-card">
+                    <div class="data-header">
+                        <h3><i class="fas fa-list"></i> Sensör Verileri</h3>
+                        <div class="data-controls">
+                            <button class="refresh-btn" onclick="refreshData()">
+                                <i class="fas fa-sync-alt"></i> Yenile
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th><i class="fas fa-hashtag"></i> #</th>
+                                    <th><i class="fas fa-microchip"></i> Sensör ID</th>
+                                    <th><i class="fas fa-thermometer-half"></i> Sıcaklık</th>
+                                    <th><i class="fas fa-tint"></i> Nem</th>
+                                    <th><i class="fas fa-map-marker-alt"></i> Konum</th>
+                                    <th><i class="fas fa-clock"></i> Zaman</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dataTableBody">
+                                <!-- Data will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <button class="page-btn" id="prevBtn" onclick="previousPage()">
+                            <i class="fas fa-chevron-left"></i> Önceki
+                        </button>
+                        <span class="page-info" id="pageInfo">Sayfa 1</span>
+                        <button class="page-btn" id="nextBtn" onclick="nextPage()">
+                            Sonraki <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner hidden" id="loadingSpinner">
+        <div class="spinner"></div>
+        <p>Veriler yükleniyor...</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html> 

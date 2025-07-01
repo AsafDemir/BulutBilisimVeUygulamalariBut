@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Main.py (Flask)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "FLASK_ENV": "development"
+            }
+        },
+        {
+            "name": "Python: Sensor Simulator",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/sensor_simulator.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Data Consumer",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/data_consumer.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Database Setup",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/database_setup.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+} 

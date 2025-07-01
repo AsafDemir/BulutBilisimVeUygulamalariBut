@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "mqtt-veri-isleme",
+  "private_key_id": "d7424e37876284d8766f1ecd99469e765a54f35f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDXr2S4nFbgm+Mu\njCw7Mw+Hh5YgqOobQ1efZmblqQ/jHfUg4DjjOlBbnKX9Mr1tuYJ0yU18ad3N/ACG\nHsC8QKSDjvjj4OqtolZ5gSNeJaV9m2CYsHOzq5Gn24vB6AQNfBqiUY+vVKjgYI3z\n0MdzGgFJNR4xNsrEjANNg62JeLZHcE6XNbxTSH9sVOAGBhLDOL4X1TYgQio0HSG6\nm3eIHDut5wlRbLcI+9rt+aR70xFpyyNrkoukVffXKI1iy9qNQALZSZruy5oPftqA\nKAnc78KhhKe6Z0zt2ptETA754fEx+Gnnp9wAwnG6Soa9zVXyaST2Ndt4J04nnO7k\n4xYX7dTvAgMBAAECggEAakSOma7d1zi3TF3gBSL5SctyGpFfFyOs7mqj1A/iNgKy\nngobvUkkAp9B4Wi4kHFQZ34vYVc/45eAIpTQXXB0HiW5V32f4wETHjaUWHSv/x0p\nENIPj7y+vTecumM4a/RzovoQk1BhDHxGNJTvUDTF4W38fD8E1KYvkmeIfy0skjFJ\nLwfnPvqj7O4/L5RLY74dkw5niI4WyR4udVBsFbI1dorPslket+/goVWzkWu0ffO9\n3MoqOU4EEpl+QjjKTNoMCnsf1AusNVC8t3Z3rJ4UJ1xyhE8GbkzEuaXsltowz+dD\nRaQdQITuvvkRDvdsUzGfJKFPPO+/KFmQ7Dx/A27B0QKBgQD9iM0WsEXSunQkLuCA\n/3gF8vbtrYMlc1SoO6oEvzs2tSkFhSNi079drBU4UPfbHSOmIGshQ5rntOsWmzLs\nTMHo08fpLe3HeVBXvgXkUppcyjvNx7dfGNGGQ9UC2WiWmj1DGsXXrB4l8NZyEVnu\n4ijP+A1/kcieYC3bXgwXvOb7VQKBgQDZyFzlMpskQTesRVooNX52E86cv6LpGx/o\n29KIieErNgpgfBg6t+9gJsZ+mXGkO+BeEXwAOV+b2sd4blV9W562AvnqFOCMQZCh\nGw/fBM9DY8Az5RH+kOAmF3OWvIqbsquaYrbFCwkNhR1AW4QzNV8PEIQCa7q7Ulhg\nNZjDd0C3MwKBgFundNza5KMFnK7n82ku8ajU6MeLjnmfc99Nkm0c5L8mRqokM2Kq\nweePKiytuKyRoC2SUqg31GwnT0Vg3cvnA8KzrPVzER6nkI/ntiGQaxVYVr5RkMzk\nH/q10u+wwMqQ/8yehR8urcdxhVS/SQ++2po0Rkzz2t7GTk2bdiuusqHxAoGAXO3X\nXeHLO5wsonDxeKji7oWjK1XGsUtmwVlTq/mRwHuN0AAD4sJr/Y5uMsVNLbRzGBDD\n5eCVgI7JgQUrq5M11RrOA2mnK5IqoeRHUHXf7zSYZkx/8i1lyDtHknGff7Ks8PLg\nZJJB6af8hGLItYU3q9jzS4kmpBoOJfeY2QeA8OsCgYBUpBy4JRwqn6wfmBGdqg8v\nUO+HWbgbqESEl/Rw+y3gqHu1NYJ8K30s7utNkDil0vCeYFPkBUA32o2CiaLC5lIu\nznadhRiGcLLRSFFELAEjL1OgmE8wpGi26zX7OF8LXxoBnYfZTXSKNLt7rjV+nRrs\nXHZzFpFiavC3hlX1zhWwUw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "mqtt-subscriber@mqtt-veri-isleme.iam.gserviceaccount.com",
+  "client_id": "104802693617280969409",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mqtt-subscriber%40mqtt-veri-isleme.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
