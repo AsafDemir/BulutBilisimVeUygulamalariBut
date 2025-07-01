@@ -1,0 +1,45 @@
+# Smart Parking IoT Projesi - Python Bağımlılıkları
+
+# MQTT İstemci Kütüphanesi
+paho-mqtt==1.6.1
+
+# AWS SDK
+boto3==1.35.0
+botocore==1.35.0
+
+# SSL ve şifreleme
+pyOpenSSL==23.3.0
+cryptography==41.0.7
+
+# Zaman ve tarih işlemleri
+python-dateutil==2.8.2
+
+# JSON işlemleri (Python'da yerleşik, ama version kontrolü için)
+# json - yerleşik
+
+# Threading (Python'da yerleşik)
+# threading - yerleşik
+
+# Loglama (Python'da yerleşik)
+# logging - yerleşik
+
+# Dosya sistemi işlemleri (Python'da yerleşik)
+# os - yerleşik
+
+# Rastgele sayı üretimi (Python'da yerleşik)
+# random - yerleşik
+
+# Zaman işlemleri (Python'da yerleşik)
+# time - yerleşik
+
+# Web arayüz için (opsiyonel)
+Flask==3.0.0
+Flask-CORS==4.0.0
+
+# Veri analizi için (opsiyonel)
+pandas==2.1.3
+numpy==1.24.3
+
+# Grafik oluşturma için (opsiyonel)
+matplotlib==3.8.2
+plotly==5.17.0 

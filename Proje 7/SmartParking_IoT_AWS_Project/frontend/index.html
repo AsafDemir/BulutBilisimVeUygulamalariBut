@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚗 Smart Parking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-car"></i> Smart Parking Dashboard</h1>
+                <p>AWS IoT tabanlı gerçek zamanlı otopark izleme sistemi</p>
+            </div>
+            <div class="header-stats">
+                <div class="stat-card">
+                    <i class="fas fa-wifi"></i>
+                    <span id="connectionStatus">Bağlantı Durumu</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <span id="lastUpdate">Son Güncelleme</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Overview Cards -->
+            <section class="overview">
+                <h2><i class="fas fa-chart-bar"></i> Genel Durum</h2>
+                <div class="cards-grid">
+                    <div class="overview-card total">
+                        <div class="card-icon">
+                            <i class="fas fa-parking"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Toplam Park Alanı</h3>
+                            <span class="big-number" id="totalSpaces">10</span>
+                            <p>Aktif Cihaz</p>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-card occupied">
+                        <div class="card-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Ortalama Doluluk</h3>
+                            <span class="big-number" id="avgOccupancy">--</span>
+                            <p>Yüzde</p>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-card available">
+                        <div class="card-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Müsait Alanlar</h3>
+                            <span class="big-number" id="availableCount">--</span>
+                            <p>Lokasyon</p>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-card peak">
+                        <div class="card-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Yoğun Alanlar</h3>
+                            <span class="big-number" id="peakCount">--</span>
+                            <p>Lokasyon</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Parking Locations -->
+            <section class="parking-locations">
+                <h2><i class="fas fa-map-marker-alt"></i> Park Alanları</h2>
+                <div class="locations-grid" id="parkingGrid">
+                    <!-- Dinamik olarak JavaScript ile doldurulacak -->
+                </div>
+            </section>
+
+
+
+            <!-- Data Table -->
+            <section class="data-table-section">
+                <h2><i class="fas fa-table"></i> Detaylı Veriler</h2>
+                <div class="table-controls">
+                    <button id="refreshBtn" class="btn-primary">
+                        <i class="fas fa-sync-alt"></i> Yenile
+                    </button>
+                    <select id="locationFilter" class="filter-select">
+                        <option value="">Tüm Lokasyonlar</option>
+                    </select>
+                </div>
+                <div class="table-container">
+                    <table id="dataTable" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Cihaz ID</th>
+                                <th>Lokasyon</th>
+                                <th>Doluluk %</th>
+                                <th>Durum</th>
+                                <th>Son Güncelleme</th>
+                                <th>Detay</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTableBody">
+                            <!-- Dinamik olarak JavaScript ile doldurulacak -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Smart Parking IoT System - Bulut Bilişim Uygulamaları</p>
+                <div class="footer-links">
+                    <a href="#" onclick="showInfo()">
+                        <i class="fas fa-info-circle"></i> Proje Hakkında
+                    </a>
+                    <a href="#" onclick="showTechInfo()">
+                        <i class="fas fa-cogs"></i> Teknoloji
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal for Info -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-info-circle"></i> Proje Bilgileri</h2>
+            <div id="modalBody">
+                <!-- JavaScript ile doldurulacak -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="spinner-overlay">
+        <div class="spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Veri yükleniyor...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
